@@ -12,7 +12,7 @@
 				"referrer": document.referrer, 
 				"variation name": $this.attr('data-mixpanel-variation')
 			}, function() {
-				window.location = $this.attr('href')
+				window.top.location = $this.attr('href')
 			});
 
 			e.preventDefault();
@@ -28,7 +28,7 @@
 					"variation name": $this.attr('data-mixpanel-variation')
 				} : {}
 			), function() {
-				window.location = $this.attr('href')
+				window.top.location = $this.attr('href')
 			});
 
 			e.preventDefault();
@@ -44,7 +44,7 @@
 					"variation name": $this.attr('data-mixpanel-variation')
 				} : {}
 			), function() {
-				window.location = $this.attr('href')
+				window.top.location = $this.attr('href')
 			});
 
 			e.preventDefault();
