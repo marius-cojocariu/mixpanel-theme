@@ -10,10 +10,11 @@ this script will read some basic data attributes and send events to mixpanel whe
 ####Steps to make this work:
 
 1. all links that got to specific variations should have the ```data-mixpanel-variation``` attribute which contain the variation name
-2. all links that remove the top iframe (close buttons) should have the ```data-mixpanel-close``` attribute and you can also include the ```data-mixpanel-variation``` attribute if this is known
-3. all links that got to the purchase page should have the ```data-mixpanel-purchase``` attribute and you can also include the ```data-mixpanel-variation``` attribute if this is known
-4. include the mixpanel tracking script on all pages
-5. include the ```mixpanel.js``` or ```mixpanel.min.js``` file on all pages
+1. all links that remove the top iframe (close buttons) should have the ```data-mixpanel-close``` attribute and you can also include the ```data-mixpanel-variation``` attribute if this is known
+1. for landing page tracking to work the landing page(s) should have at least one div with the property ```data-mixpanel-landing```
+1. all links that got to the purchase page should have the ```data-mixpanel-purchase``` attribute and you can also include the ```data-mixpanel-variation``` attribute if this is known
+1. include the mixpanel tracking script on all pages
+1. include the ```mixpanel.js``` or ```mixpanel.min.js``` file on all pages
 
 ---
 
